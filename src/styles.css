@@ -1,0 +1,45 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #333;
+  padding: 60px;
+}
+
+button {
+  background-color: #333;
+  color: #eee;
+  border: 2px solid rgb(27, 92, 27);
+  border-radius: 20px;
+  width: 120px;
+  height: 50px;
+  animation-iteration-count: 1;
+  animation: 0.5s buttonAnimationNoHover ease-in-out;
+}
+button:hover {
+  animation-iteration-count: 1;
+  animation: 0.5s buttonAnimationHover ease-in-out;
+  width: 220px;
+  border: 2px solid #070573;
+}
+
+@-webkit-keyframes buttonAnimationHover {
+  from {
+    width: 120px;
+    border: 2px solid rgb(27, 92, 27);
+  }
+  to {
+    width: 220px;
+    border: 2px solid #070573;
+  }
+}
+
+@-webkit-keyframes buttonAnimationNoHover {
+  from {
+    width: 220px;
+    border: 2px solid #070573;
+  }
+  to {
+    width: 120px;
+    border: 2px solid rgb(27, 92, 27);
+  }
+}
